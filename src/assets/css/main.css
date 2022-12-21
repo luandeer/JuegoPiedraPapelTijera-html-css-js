@@ -1,0 +1,144 @@
+/** esto es una tipografia de google fonts**/
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Poppins:wght@100&display=swap');
+body {
+  /**esto viene de google fonts**/
+  
+  font-family: 'Poppins', sans-serif;
+  background-image: url(../img/fondo.jpg);
+  background-size: cover;
+}
+#seleccionar-jugador {
+  /**se usa el display en el elemento o etiqueta padre**/
+  display: flex;
+  /**flex direction es para ver si lo quieres ordenar en columnas o filas. En este caso es columnas.**/
+  flex-direction: column;
+  /**centrar horizontalmente**/
+  justify-content: center;
+  /**centrar verticalmente**/
+  align-items: center;
+  height: 100vh;
+
+}
+.titulo {
+  /**es el color del titulo**/
+  color: white;
+  /** es el color de fondo del titulo
+    background-color: teal;**/
+  font-size: 32px;
+  font-family: 'Alfa Slab One', cursive;
+}
+.subtitulo {
+  color: white;
+  font-size: 20px;
+  
+}
+.tarjetas, .tarjetas-ataques {
+  display: flex;
+  /**gap sirve para dar espaciado en medio de los elementos
+  gap: 10px;**/
+}
+.tarjeta-de-pipati {
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 1px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+.tarjeta-de-pipati p {
+  font-family: 'Alfa Slab One', cursive;
+  color: white;
+}
+.tarjeta-de-pipati img {
+  width: 160px;
+  height: 250px;
+  border: 1px solid #5F6F94 ;
+  border-radius: 100px;
+  cursor: pointer;
+
+}
+#boton-jugador{
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  background: transparent;
+  border: 1px solid #5F6F94;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin: 230px 0px 0px 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+input {
+  display: none;
+}
+input:checked + label {
+  opacity: 50%;
+  width: 210px;
+  
+}
+#seleccionar-ataque{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bonton-ataque{
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background: transparent;
+  border: 1px solid #5F6F94;
+  color: white;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+#mensajes{
+  width: 280px;
+  border: 1px solid #5F6F94 ;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  display: flex;
+ align-items: center;
+  color: white;
+  flex-direction: column;
+}
+
+#boton-reiniciar{
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+.ataques{
+  display: grid;
+  color: white;
+  grid-template-columns: 100px 100px;
+  border: 1px solid #5F6F94 ;
+  margin-top: 20px ;
+  border-radius: 20px;
+}
+.emoji-vidas{
+  padding-top: 10px;
+}
+.ataques-jugador, .ataques-enemigo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media(max-width: 360px){
+  .tarjetas, .tarjetas-ataques{
+    flex-direction: column; 
+   }
+  
+}
