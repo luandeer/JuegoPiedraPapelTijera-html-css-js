@@ -85,6 +85,9 @@ input:checked + label {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
+  justify-content: center;
+  
 }
 .bonton-ataque{
   width: 100px;
@@ -135,6 +138,17 @@ input:checked + label {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#ver-mapa{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+#mapa{
+  border: 2px solid white;
+  border-radius: 20px;
 }
 @media(max-width: 360px){
   .tarjetas, .tarjetas-ataques{

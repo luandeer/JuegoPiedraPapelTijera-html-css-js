@@ -24,7 +24,16 @@
       <button id="boton-jugador">Seleccionar</button>
     </section>
 
-    <section id="seleccionar-ataque">
+    <section id="ver-mapa">
+      <h1 class="titulo">Elige contra quien quieres jugar</h1>
+      <canvas id="mapa"></canvas>
+      <button onmouseup="detenerMovimiento()"  onmousedown="moverArriba()">Arriba</button>
+      <button onmouseup="detenerMovimiento()"  onmousedown="moverIzquierda()">Izquierda</button>
+      <button onmouseup="detenerMovimiento()"  onmousedown="moverAbajo()">Abajo</button>
+      <button onmouseup="detenerMovimiento()"  onmousedown="moverDerecha()">Derecha</button>
+    </section>
+
+    <section id="seleccionar-ataque" >
       <h1 class="titulo">Pi-pa-ti🥌📋✂</h1>
       <h2 class="subtitulo">Elige tu ataque:</h2>
       <div  id="contenedorAtaques" class="tarjetas-ataques">
