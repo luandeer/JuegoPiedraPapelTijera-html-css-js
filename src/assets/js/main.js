@@ -75,27 +75,27 @@ var messi = new Pipati(
   "Messi",
   "../src/assets/img/messims10.jpg",
   5,
-  "../src/assets/img/messi.jpg"
+  "../src/assets/img/messi.png"
 );
 
 var cristiano = new Pipati(
   "Cristiano",
   "../src/assets/img/cristianocr7.jpg",
   5,
-  "../src/assets/img/cristiano.jpg"
+  "../src/assets/img/cristiano.png"
 );
 var neymar = new Pipati(
   "Neymar",
   " ../src/assets/img/neymar.jpg",
   5,
-  "../src/assets/img/ney.jpg"
+  "../src/assets/img/ney.png"
 );
 
 var neymarEnemigo = new Pipati(
   "Neymar",
   " ../src/assets/img/neymar.jpg",
   5,
-  "../src/assets/img/ney.jpg",
+  "../src/assets/img/ney.png",
   420,
   110
 );
@@ -104,7 +104,7 @@ var messiEnemigo = new Pipati(
   "Messi",
   "../src/assets/img/messims10.jpg",
   5,
-  "../src/assets/img/messi.jpg",
+  "../src/assets/img/messi.png",
   420,
   25
 );
@@ -113,7 +113,7 @@ var cristianoEnemigo = new Pipati(
   "Cristiano",
   "../src/assets/img/cristianocr7.jpg",
   5,
-  "../src/assets/img/cristiano.jpg",
+  "../src/assets/img/cristiano.png",
   420,
   200
 );

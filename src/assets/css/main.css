@@ -1,9 +1,9 @@
 /** esto es una tipografia de google fonts**/
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Poppins:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Poppins:wght@100&display=swap");
 body {
   /**esto viene de google fonts**/
-  
-  font-family: 'Poppins', sans-serif;
+
+  font-family: "Poppins", sans-serif;
   background-image: url(../img/fondo.jpg);
   background-size: cover;
 }
@@ -17,7 +17,6 @@ body {
   /**centrar verticalmente**/
   align-items: center;
   height: 100vh;
-
 }
 .titulo {
   /**es el color del titulo**/
@@ -25,14 +24,14 @@ body {
   /** es el color de fondo del titulo
     background-color: teal;**/
   font-size: 32px;
-  font-family: 'Alfa Slab One', cursive;
+  font-family: "Alfa Slab One", cursive;
 }
 .subtitulo {
   color: white;
   font-size: 20px;
-  
 }
-.tarjetas, .tarjetas-ataques {
+.tarjetas,
+.tarjetas-ataques {
   display: flex;
   /**gap sirve para dar espaciado en medio de los elementos
   gap: 10px;**/
@@ -47,28 +46,26 @@ body {
   flex-direction: column-reverse;
   justify-content: flex-end;
   align-items: center;
-  
 }
 .tarjeta-de-pipati p {
-  font-family: 'Alfa Slab One', cursive;
+  font-family: "Alfa Slab One", cursive;
   color: white;
 }
 .tarjeta-de-pipati img {
   width: 160px;
   height: 250px;
-  border: 1px solid #5F6F94 ;
+  border: 1px solid #5f6f94;
   border-radius: 100px;
   cursor: pointer;
-
 }
-#boton-jugador{
+#boton-jugador {
   width: 180px;
   height: 40px;
   border-radius: 20px;
   background: transparent;
-  border: 1px solid #5F6F94;
+  border: 1px solid #5f6f94;
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 230px 0px 0px 10px;
   cursor: pointer;
   font-size: 15px;
@@ -79,40 +76,38 @@ input {
 input:checked + label {
   opacity: 50%;
   width: 210px;
-  
 }
-#seleccionar-ataque{
+#seleccionar-ataque {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100vh;
   justify-content: center;
-  
 }
-.bonton-ataque{
+.boton-ataque {
   width: 100px;
   height: 40px;
   border-radius: 20px;
   background: transparent;
-  border: 1px solid #5F6F94;
+  border: 1px solid #5f6f94;
   color: white;
   font-size: 15px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   cursor: pointer;
 }
-#mensajes{
+#mensajes {
   width: 280px;
-  border: 1px solid #5F6F94 ;
+  border: 1px solid #5f6f94;
   padding: 20px;
   margin-top: 20px;
   border-radius: 20px;
   display: flex;
- align-items: center;
+  align-items: center;
   color: white;
   flex-direction: column;
 }
 
-#boton-reiniciar{
+#boton-reiniciar {
   width: 100px;
   height: 40px;
   border-radius: 20px;
@@ -120,39 +115,74 @@ input:checked + label {
   border: none;
   color: white;
   font-size: 15px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   cursor: pointer;
 }
-.ataques{
+.ataques {
   display: grid;
   color: white;
   grid-template-columns: 100px 100px;
-  border: 1px solid #5F6F94 ;
-  margin-top: 20px ;
+  border: 1px solid #5f6f94;
+  margin-top: 20px;
   border-radius: 20px;
 }
-.emoji-vidas{
+.emoji-vidas {
   padding-top: 10px;
 }
-.ataques-jugador, .ataques-enemigo{
+.ataques-jugador,
+.ataques-enemigo {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#ver-mapa{
+#ver-mapa {
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
 }
-#mapa{
+#mapa {
   border: 2px solid white;
   border-radius: 20px;
+  margin-bottom: 25px;
 }
-@media(max-width: 360px){
-  .tarjetas, .tarjetas-ataques{
-    flex-direction: column; 
-   }
-  
+
+#botonMov {
+  display: grid;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+.botonMovDiseño {
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background: transparent;
+  border: 1px solid #5f6f94;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.botonMov-izquierda {
+  position: relative;
+  right: 108px;
+}
+.botonMov-abajo {
+  position: relative;
+  bottom: 50px;
+}
+
+.botonMov-derecha {
+  position: relative;
+  bottom: 100px;
+  left: 108px;
+}
+
+@media (max-width: 360px) {
+  .tarjetas,
+  .tarjetas-ataques {
+    flex-direction: column;
+  }
 }

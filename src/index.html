@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pi-pa-ti</title>
-    
+
     <link rel="stylesheet" href="../src/assets/css/main.css" />
   </head>
   <body>
@@ -17,9 +17,7 @@
         Se le agrega un atributo "name" a los imput para poder formar un grupo y seleccionar solo 1 opcion.
         El label es para darle un indicador al input.
       -->
-      <div id="contenedorTarjetas" class="tarjetas">
-        
-      </div>
+      <div id="contenedorTarjetas" class="tarjetas"></div>
 
       <button id="boton-jugador">Seleccionar</button>
     </section>
@@ -27,18 +25,47 @@
     <section id="ver-mapa">
       <h1 class="titulo">Elige contra quien quieres jugar</h1>
       <canvas id="mapa"></canvas>
-      <button defer onmouseup="detenerMovimiento()"  onmousedown="moverArriba()">Arriba</button>
-      <button defer onmouseup="detenerMovimiento()"  onmousedown="moverIzquierda()">Izquierda</button>
-      <button defer onmouseup="detenerMovimiento()"  onmousedown="moverAbajo()">Abajo</button>
-      <button defer onmouseup="detenerMovimiento()"  onmousedown="moverDerecha()">Derecha</button>
+
+      <div id="botonMov">
+        <button
+          defer
+          class="botonMovDiseño botonMov-arriba"
+          onmouseup="detenerMovimiento()"
+          onmousedown="moverArriba()"
+        >
+          Arriba
+        </button>
+        <button
+          defer
+          class="botonMovDiseño botonMov-izquierda"
+          onmouseup="detenerMovimiento()"
+          onmousedown="moverIzquierda()"
+        >
+          Izquierda
+        </button>
+        <button
+          defer
+          class="botonMovDiseño botonMov-abajo"
+          onmouseup="detenerMovimiento()"
+          onmousedown="moverAbajo()"
+        >
+          Abajo
+        </button>
+        <button
+          defer
+          class="botonMovDiseño botonMov-derecha"
+          onmouseup="detenerMovimiento()"
+          onmousedown="moverDerecha()"
+        >
+          Derecha
+        </button>
+      </div>
     </section>
 
-    <section id="seleccionar-ataque" >
+    <section id="seleccionar-ataque">
       <h1 class="titulo">Pi-pa-ti🥌📋✂</h1>
       <h2 class="subtitulo">Elige tu ataque:</h2>
-      <div  id="contenedorAtaques" class="tarjetas-ataques">
-        
-      </div>
+      <div id="contenedorAtaques" class="tarjetas-ataques"></div>
 
       <div id="mensajes">
         <p id="resultado">Mucha suerte!!</p>
@@ -49,19 +76,19 @@
 
       <div class="ataques">
         <div class="ataques-jugador">
-          <p class="emoji-vidas">💖</p> 
+          <p class="emoji-vidas">💖</p>
           <p id="vidas-jugador">3</p>
           <p id="Personaje-jugador"></p>
           <div id="ataques-del-jugador"></div>
         </div>
         <div class="ataques-enemigo">
-          <p class="emoji-vidas">💖</p> 
+          <p class="emoji-vidas">💖</p>
           <p id="vidas-enemigo">3</p>
           <p id="Personaje-enemigo"></p>
           <div id="ataques-del-enemigo"></div>
         </div>
       </div>
-
+      
     </section>
     <script src="../src/assets/js/main.js"></script>
   </body>
